@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-wh-h1(+j^l-xhe9d04m8=0yfw%kql3_e78)e@^^9^randomguy
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["oceanicexpress.up.railway.app"]
 
 
 # Application definition
@@ -132,4 +132,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 db_from_env= dj_database_url.config(conn_max_age=500)
 DATABASES["default"].update(db_from_env)
-CRSF_TRUSTED_ORIGINS= [""]
+CRSF_TRUSTED_ORIGINS= ["https://oceanicexpress.up.railway.app"]
